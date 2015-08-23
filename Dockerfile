@@ -1,5 +1,7 @@
 FROM node:latest
 
+MAINTAINER joshglazebrook
+
 ADD . /app
 WORKDIR /app
 
@@ -7,8 +9,9 @@ RUN npm install
 
 ENV NODE_ENV=production
 ENV testname=josh
-ENV PORT=3000
+ENV PORT=80
 
-EXPOSE 3000
+
+EXPOSE 80
 
 CMD "node" "app.js"
