@@ -10,7 +10,7 @@ app.use(methodOverride());
 app.get('/', function (req, res) {
   var obj = {};
   obj.node = process.env.TUTUM_NODE_HOSTNAME;
-  obj.other = "hello";
+  obj.other = "hello-devbranch";
 
   res.send(obj);
 

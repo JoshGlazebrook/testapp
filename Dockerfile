@@ -7,8 +7,7 @@ WORKDIR /app
 
 RUN npm install
 
-ENV NODE_ENV=production
-ENV testnfame=josh
+ENV NODE_ENV=development
 ENV PORT=80
 
 
